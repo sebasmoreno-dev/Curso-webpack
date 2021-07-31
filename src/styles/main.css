@@ -1,10 +1,11 @@
 @font-face {
-	font-family: 'Ubuntu';
+	font-family: Ubuntu, sans-serif;
 	src: url('../assets/fonts/ubuntu-regular.woff2') format('woff2'),
 		url('../assets/fonts/ubuntu-regular.woff') format('woff');
 	font-weight: 400;
 	font-style: normal;
 }
+
 
 html {
 	font-family: sans-serif;
@@ -224,7 +225,7 @@ th {
 
 body {
 	background-color: #f9f9f9;
-	font-family: Ubuntu, sans-serif;
+	font-family: sans-serif, ubuntu;
 }
 
 .center {
@@ -296,11 +297,13 @@ body {
 
 .card ul {
   list-style-type: none;
+  color: black;
 }
 
 .card li {
   display: inline-block;
   margin: 0 1em 0 0
+  color: black;
 }
 
 .card_social {
