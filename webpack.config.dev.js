@@ -13,6 +13,7 @@ module.exports = {
         assetModuleFilename: "assets/images/[hash][ext][query]"
         },
     mode: "development",
+    watch: true,
     resolve: {
         extensions: ['.js'],
         alias: {
@@ -44,15 +45,19 @@ module.exports = {
                 type: "asset/resource"
             },
             {
-                test: /\.(woff|woff2)$/,
+                test: /\.(woff|woff2)$/i,
+                type: "asset/resource",
+                generator: {
+                    filename: "stactic/fonts/[hash][ext][query]",
+                },
                 use: {
-                    loader: "url-loader",
+                    loader: 'url-loader',
                     options: {
                         limit: 10000,
                         mimetype: "application/font-woff",
                         name: "[name].[contenthash].[ext]",
                         outputPath: "./assets/fonts/",
-                        publicPath: "../assets/fonts/",
+                        publicPath: "./assets/fonts/",
                         esModule: false,
                     },
                 }
