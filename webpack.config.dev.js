@@ -46,22 +46,11 @@ module.exports = {
             },
             {
                 test: /\.(woff|woff2)$/i,
-                type: "asset/resource",
-                generator: {
-                    filename: "stactic/fonts/[hash][ext][query]",
+                type: 'asset/resource',
+                    generator: {
+                    filename: 'assets/fonts/[hash][ext][query]',
                 },
-                use: {
-                    loader: 'url-loader',
-                    options: {
-                        limit: 10000,
-                        mimetype: "application/font-woff",
-                        name: "[name].[contenthash].[ext]",
-                        outputPath: "./assets/fonts/",
-                        publicPath: "./assets/fonts/",
-                        esModule: false,
-                    },
-                }
-            }
+            },
         ]
     },
     plugins: [
