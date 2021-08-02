@@ -26,13 +26,13 @@ const view = `
         </ul>
     </div>
     <div class="card_social">
-        <a href="https://twitter.com/gndx">
+        <a href="https://twitter.com/sebasmoreno_dev">
         <img src="${twitter}" />
         </a>
-        <a href="https://github.com/gndx">
+        <a href="https://github.com/sebastianmoreno731">
         <img src="${github}" />
         </a>
-        <a href="https://instagram.com/gndx">
+        <a href="https://www.instagram.com/sebasmoreno_dev">
         <img src="${instagram}" />
         </a>
     </div>
